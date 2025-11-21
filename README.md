@@ -6,7 +6,6 @@
 
 ![Languages](https://img.shields.io/badge/Languages-5-blue)
 ![Problems](https://img.shields.io/badge/Problems-42-green)
-![Progress](https://img.shields.io/badge/Progress-0%25-orange)
 ![Status](https://img.shields.io/badge/Status-Active-success)
 
 </div>
@@ -15,12 +14,10 @@
 
 ## 📚 Quick Start
 
-**New here?** Start with these guides:
-- 📖 [START HERE](docs/START-HERE.md) - Your first 5 minutes
-- 📖 [Getting Started](docs/GETTING-STARTED.md) - Day 1 step-by-step guide
-- 📋 [Learning Plan](docs/learning-plan.md) - Complete 14-day curriculum
-- 🛠️ [How to Run](docs/HOW-TO-RUN.md) - Execute code in all 5 languages
-- 📈 [Progress Tracker](docs/progress-tracker.md) - Track your journey
+**New here?** 
+- 📖 [Complete Guide](docs/GUIDE.md) - Everything you need to navigate, learn, and use this repository
+- 💻 Explore `problems/` folder to see all implementations
+- 🧠 Read `concepts/` for pattern guides and explanations
 
 ---
 
@@ -102,33 +99,27 @@ As a **Full-Stack Engineering Manager** who codes daily, I maintain sharp algori
 ```
 coding-problems-practice/
 ├── 📖 README.md                  # This file - Portfolio overview
-├── 📚 docs/                      # All documentation
-│   ├── START-HERE.md            # Begin your journey here!
-│   ├── GETTING-STARTED.md       # Day 1 step-by-step guide
-│   ├── learning-plan.md         # 14-day structured curriculum
-│   ├── progress-tracker.md      # Detailed daily progress tracking
-│   ├── HOW-TO-RUN.md           # Running code in all languages
-│   └── PROJECT-SUMMARY.md       # What was built
+├── 📘 docs/GUIDE.md             # Complete navigation and learning guide
 ├── 🧠 concepts/                  # Deep-dive guides for each pattern
-│   ├── 01-arrays-and-hashing.md
-│   ├── 02-two-pointers.md       # (Created as you progress)
-│   └── ...
+│   └── 01-arrays-and-hashing.md # HashMap patterns, sets, frequency counting
 ├── 💻 problems/                  # All coding problems organized by topic
-│   ├── 01-arrays-and-hashing/
-│   │   ├── 001-two-sum/
-│   │   │   ├── README.md         # Problem statement & approach
-│   │   │   ├── test-data.json    # Comprehensive test cases
-│   │   │   ├── solution.py       # Python boilerplate
-│   │   │   ├── solution.js       # JavaScript boilerplate
-│   │   │   ├── solution.ts       # TypeScript boilerplate
-│   │   │   ├── solution.cs       # C# boilerplate
-│   │   │   └── solution.go       # Go boilerplate
-│   │   └── ...
-│   └── ...
-├── 🏆 challenges/                # Your timed coding challenges (Day 4, 8, 12)
-├── 💾 solutions/                 # Your completed, working solutions
-└── 🛠️ utils/                     # Test runners and helper utilities
+│   └── 01-arrays-and-hashing/
+│       ├── 001-two-sum/
+│       │   ├── README.md         # Problem statement with examples
+│       │   ├── test-data.json    # Comprehensive test cases
+│       │   ├── solution.py       # Python implementation
+│       │   ├── solution.js       # JavaScript implementation
+│       │   ├── solution.ts       # TypeScript implementation
+│       │   ├── solution.cs       # C# implementation
+│       │   └── solution.go       # Go implementation
+│       ├── 002-contains-duplicate/
+│       └── 003-valid-anagram/
+├── 🏆 challenges/                # Timed coding challenges
+├── 💾 solutions/                 # Completed, production-ready solutions
+└── 🛠️ utils/                     # Test runners and helper scripts
 ```
+
+📘 **[Read the Complete Guide](docs/GUIDE.md)** for detailed navigation, learning path, and usage instructions.
 
 ---
 
@@ -366,10 +357,9 @@ func isAnagram(s string, t string) bool {
 
 ## 📞 Connect With Me
 
-- **GitHub**: [Your GitHub Profile]
-- **LinkedIn**: [Your LinkedIn]
-- **Email**: [Your Email]
-- **Portfolio**: [Your Portfolio Site]
+- **GitHub**: [@omgr](https://github.com/omgr/)
+- **LinkedIn**: [Madan Gopal Ongole](https://www.linkedin.com/in/ongolemadangopal/)
+- **Email**: ongolemadangopal@gmail.com
 
 ---
 

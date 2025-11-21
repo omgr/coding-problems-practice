@@ -54,7 +54,11 @@ desktop.ini
 test-results/
 coverage/
 
-PDATE-SUMMARY.md 
+# Temporary setup files
+UPDATE-SUMMARY.md 
 FOLDER-RENAME-INSTRUCTIONS.md 
+
+# Track only the main guide, ignore other docs
 docs/*
+!docs/GUIDE.md
 
