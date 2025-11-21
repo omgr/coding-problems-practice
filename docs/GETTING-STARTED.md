@@ -1,6 +1,6 @@
-# 🎯 Getting Started - Your First Day
+# 🎯 Getting Started Guide
 
-Welcome to your coding interview preparation journey! This guide will help you get started with Day 1.
+A practical walkthrough for your first problem, complete with coaching questions and step-by-step implementation guidance across all five languages.
 
 ---
 
@@ -38,8 +38,9 @@ go version
 
 ## 📁 Navigate to the Repository
 
-```powershell
-cd "C:\Users\Ongole Madan gopal R\Documents\Personal\Learn\coding-interview-prep"
+```bash
+# Clone or navigate to your local copy
+cd coding-problems-practice
 ```
 
 ---
@@ -51,8 +52,8 @@ cd "C:\Users\Ongole Madan gopal R\Documents\Personal\Learn\coding-interview-prep
 Let's start with the first problem together!
 
 #### Step 1: Read the Problem
-```powershell
-cd problems\01-arrays-and-hashing\001-two-sum
+```bash
+cd problems/01-arrays-and-hashing/001-two-sum
 code README.md  # Or open in your preferred editor
 ```
 
@@ -82,7 +83,7 @@ I'll ask you these questions. Take your time to think:
 #### Step 3: Implement in Python (Primary Language)
 
 Open `solution.py`:
-```powershell
+```bash
 code solution.py
 ```
 
@@ -143,7 +144,7 @@ Write your answers in comments in the code!
 #### Step 5: Implement in C# (Second Primary Language)
 
 Open `solution.cs`:
-```powershell
+```bash
 code solution.cs
 ```
 
@@ -153,9 +154,9 @@ code solution.cs
 - Use for loop instead of enumerate
 
 **Test it:**
-```powershell
+```bash
 csc solution.cs
-.\solution.exe
+./solution.exe  # Windows: .\solution.exe
 ```
 
 ---
@@ -163,7 +164,7 @@ csc solution.cs
 #### Step 6: Implement in JavaScript
 
 Open `solution.js`:
-```powershell
+```bash
 code solution.js
 ```
 
@@ -177,7 +178,7 @@ code solution.js
 #### Step 7: Implement in TypeScript
 
 Open `solution.ts`:
-```powershell
+```bash
 code solution.ts
 ```
 
@@ -191,7 +192,7 @@ code solution.ts
 #### Step 8: Implement in Go
 
 Open `solution.go`:
-```powershell
+```bash
 code solution.go
 ```
 
@@ -217,17 +218,17 @@ Take a 10-minute break! Then:
 If you answered **yes to all 5**, move to Problem 2!
 
 If **no to any**, review the concept guide:
-```powershell
-cd ..\..\..
-code concepts\01-arrays-and-hashing.md
+```bash
+cd ../../..
+code concepts/01-arrays-and-hashing.md
 ```
 
 ---
 
 ## 🎯 Problem 2: Contains Duplicate
 
-```powershell
-cd problems\01-arrays-and-hashing\002-contains-duplicate
+```bash
+cd problems/01-arrays-and-hashing/002-contains-duplicate
 ```
 
 **Repeat the same process:**
@@ -247,8 +248,8 @@ cd problems\01-arrays-and-hashing\002-contains-duplicate
 
 ## 🎯 Problem 3: Valid Anagram
 
-```powershell
-cd problems\01-arrays-and-hashing\003-valid-anagram
+```bash
+cd problems/01-arrays-and-hashing/003-valid-anagram
 ```
 
 **This introduces a new pattern: Frequency Counting**
@@ -264,9 +265,9 @@ cd problems\01-arrays-and-hashing\003-valid-anagram
 
 After each problem, update your progress:
 
-```powershell
-cd ..\..\..
-code progress-tracker.md
+```bash
+cd ../../..
+code docs/progress-tracker.md
 ```
 
 Change ⬜ to ✅ for completed problems in each language.

@@ -8,27 +8,27 @@ Everything is ready for you to begin. Here's what to do:
 
 ## ⚡ Quick Start (5 minutes)
 
-### 1. Open the Repository
-```powershell
-cd "C:\Users\Ongole Madan gopal R\Documents\Personal\Learn\coding-problems-practice"
+### 1. Navigate to Repository
+```bash
+cd coding-problems-practice
 ```
 
-### 2. Choose Your Reading Path
+### 2. Choose Your Path
 
-**For Immediate Action** → Open `docs/GETTING-STARTED.md`
-```powershell
+**For Step-by-Step Guide** → Open `docs/GETTING-STARTED.md`
+```bash
 code docs/GETTING-STARTED.md
 ```
-This file walks you through Day 1, Problem 1 step-by-step.
+Walks through the first problem with coaching and explanations.
 
-**For Understanding the Full Plan** → Open `docs/learning-plan.md`
-```powershell
+**For Full Learning Plan** → Open `docs/learning-plan.md`
+```bash
 code docs/learning-plan.md
 ```
-This shows your complete 14-day curriculum.
+Complete structured curriculum with all topics.
 
-**For Running Code** → Open `docs/HOW-TO-RUN.md`
-```powershell
+**For Execution Guide** → Open `docs/HOW-TO-RUN.md`
+```bash
 code docs/HOW-TO-RUN.md
 ```
 Detailed instructions for running code in all 5 languages.

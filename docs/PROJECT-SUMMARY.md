@@ -1,8 +1,8 @@
 # 📦 Project Summary
 
 **Created**: November 21, 2025  
-**Purpose**: Comprehensive coding interview preparation across 5 languages  
-**Status**: ✅ Ready to start Day 1
+**Purpose**: Multi-language DSA practice and algorithm reference library  
+**Status**: ✅ Active development and learning
 
 ---
 
@@ -60,15 +60,15 @@
 
 3. ✅ **Day 1 Ready**: 3 problems with comprehensive boilerplate in 5 languages
 
-### Start Your Journey
-```powershell
-cd "C:\Users\Ongole Madan gopal R\Documents\Personal\Learn\coding-interview-prep"
+### Begin Exploring
+```bash
+cd coding-problems-practice
 
 # Read the getting started guide
-code GETTING-STARTED.md
+code docs/GETTING-STARTED.md
 
-# Or jump right into Day 1, Problem 1
-cd problems\01-arrays-and-hashing\001-two-sum
+# Or explore a specific problem
+cd problems/01-arrays-and-hashing/001-two-sum
 code README.md
 ```
 

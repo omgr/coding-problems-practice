@@ -143,27 +143,18 @@ utils/
 
 ## 🚀 What to Do Next
 
-### 1. Complete the Folder Rename
-```powershell
-# Close VS Code first, then:
-cd "C:\Users\Ongole Madan gopal R\Documents\Personal\Learn"
-Rename-Item "coding-interview-prep" "coding-problems-practice"
+### 1. Navigate to Repository
+```bash
+cd coding-problems-practice
 ```
 
-Or rename manually in File Explorer.
-
-### 2. Navigate to New Location
-```powershell
-cd "C:\Users\Ongole Madan gopal R\Documents\Personal\Learn\coding-problems-practice"
-```
-
-### 3. Start Your Journey
-```powershell
+### 2. Explore the Structure
+```bash
 # Read the start guide
-code docs\START-HERE.md
+code docs/START-HERE.md
 
-# Or jump right in
-cd problems\01-arrays-and-hashing\001-two-sum
+# Or explore a specific problem
+cd problems/01-arrays-and-hashing/001-two-sum
 code solution.py
 ```
 
