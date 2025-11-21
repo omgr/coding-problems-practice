@@ -39,19 +39,50 @@ def two_sum(nums: List[int], target: int) -> List[int]:
         List containing indices of the two numbers
         
     Approach:
-        TODO: Explain your approach here before implementing
-        
+        Explain your approach here before implementing
+        Walkthrough of nums = [3, 2, 4], target = 6
+        In this case:
+        create empty hashmap.
+        loop through i, nums array where I being the index.
+        if target - nums[i] is not in Hashmap:
+            add to hashmap[nums[i]] = i
+            else return [i,hashmap[target - nums[i]];
+            
+        So we follow above pseudo code:
+        first we start with 
+        i = 0
+        hashmap = {}
+        num = 3
+        compliment = 6-3 = 3
+        hasmap is empty so we can't find 3 in it. so add to hashmap i.e., {[3]=0}
+
+        next iteration
+        i = 1
+        hashmap = {[3]=0}
+        num = 2
+        compliment = 6-2 = 4
+        hasmap is not empty but we can't find 4 in it. so add to hashmap i.e., {[3]=0,[2]=1}
+
+        last iteration
+        i = 2
+        hashmap = {[3]=0,[2]=1}
+        num = 4
+        compliment = 6-4 = 2
+        hasmap is not empty but we CAN find 2 in it. so return [hashmap[2],i] i.e., [1,2]
         1. What data structure will you use?
-        2. What will you store in it?
-        3. How will you find the complement?
-        
-    Implementation Steps:
-        TODO: Break down your implementation into steps
-        
-        Step 1: 
-        Step 2: 
-        Step 3: 
+        HashMap/Dictionary
+
+
     """
+    num_map = {}
+    for i, num in enumerate(nums):
+        compliment = target - num
+        if compliment in num_map:
+            return [num_map[compliment], i]
+        num_map[num] = i
+    return []
+
+
     
     # TODO: Implement your solution here
     
@@ -136,5 +167,5 @@ if __name__ == "__main__":
     print()
     
     # Uncomment the line below when you're ready to run all tests
-    # run_tests()
+    run_tests()
 

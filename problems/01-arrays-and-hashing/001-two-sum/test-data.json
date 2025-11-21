@@ -78,8 +78,8 @@
         "nums": [2, 5, 11, 15, 7, 1, 9, 6, 14, 3, 8, 12, 4, 13, 10],
         "target": 19
       },
-      "expected": [4, 8],
-      "explanation": "nums[4] + nums[8] = 7 + 14 = 21 - wait, that's wrong. Let me recalculate... 5 + 14 = 19, so indices [1, 8]"
+      "expected": [1, 8],
+      "explanation": "nums[1] + nums[8] = 5 + 14 = 19"
     },
     {
       "id": 9,
