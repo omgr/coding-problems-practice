@@ -1,0 +1,66 @@
+{
+  "problem": "Valid Anagram",
+  "testCases": [
+    {
+      "id": 1,
+      "description": "Basic anagram",
+      "input": {"s": "anagram", "t": "nagaram"},
+      "expected": true
+    },
+    {
+      "id": 2,
+      "description": "Not an anagram - different characters",
+      "input": {"s": "rat", "t": "car"},
+      "expected": false
+    },
+    {
+      "id": 3,
+      "description": "Different lengths",
+      "input": {"s": "a", "t": "ab"},
+      "expected": false
+    },
+    {
+      "id": 4,
+      "description": "Single character - same",
+      "input": {"s": "a", "t": "a"},
+      "expected": true
+    },
+    {
+      "id": 5,
+      "description": "Single character - different",
+      "input": {"s": "a", "t": "b"},
+      "expected": false
+    },
+    {
+      "id": 6,
+      "description": "Classic anagram - listen/silent",
+      "input": {"s": "listen", "t": "silent"},
+      "expected": true
+    },
+    {
+      "id": 7,
+      "description": "Repeated characters",
+      "input": {"s": "aabbcc", "t": "ccbbaa"},
+      "expected": true
+    },
+    {
+      "id": 8,
+      "description": "Same characters, different frequency",
+      "input": {"s": "aab", "t": "abb"},
+      "expected": false
+    },
+    {
+      "id": 9,
+      "description": "Empty strings",
+      "input": {"s": "", "t": ""},
+      "expected": true
+    },
+    {
+      "id": 10,
+      "description": "Long anagram",
+      "input": {"s": "thequickbrownfoxjumpsoverthelazydog", "t": "dogthelazyjumpsoverfoxbrownquickthe"},
+      "expected": true
+    }
+  ]
+}
+

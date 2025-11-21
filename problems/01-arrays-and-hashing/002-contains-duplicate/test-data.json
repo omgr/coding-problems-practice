@@ -1,0 +1,54 @@
+{
+  "problem": "Contains Duplicate",
+  "testCases": [
+    {
+      "id": 1,
+      "description": "Basic test - has duplicate",
+      "input": {"nums": [1, 2, 3, 1]},
+      "expected": true
+    },
+    {
+      "id": 2,
+      "description": "No duplicates",
+      "input": {"nums": [1, 2, 3, 4]},
+      "expected": false
+    },
+    {
+      "id": 3,
+      "description": "Multiple duplicates",
+      "input": {"nums": [1, 1, 1, 3, 3, 4, 3, 2, 4, 2]},
+      "expected": true
+    },
+    {
+      "id": 4,
+      "description": "Single element",
+      "input": {"nums": [1]},
+      "expected": false
+    },
+    {
+      "id": 5,
+      "description": "Two same elements",
+      "input": {"nums": [2, 2]},
+      "expected": true
+    },
+    {
+      "id": 6,
+      "description": "Negative numbers with duplicate",
+      "input": {"nums": [-1, -2, -3, -1]},
+      "expected": true
+    },
+    {
+      "id": 7,
+      "description": "Mixed positive negative no duplicate",
+      "input": {"nums": [-1, 0, 1, 2, 3]},
+      "expected": false
+    },
+    {
+      "id": 8,
+      "description": "Large numbers",
+      "input": {"nums": [1000000000, 999999999, 1000000000]},
+      "expected": true
+    }
+  ]
+}
+
