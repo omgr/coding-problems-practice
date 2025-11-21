@@ -54,3 +54,7 @@ desktop.ini
 test-results/
 coverage/
 
+PDATE-SUMMARY.md 
+FOLDER-RENAME-INSTRUCTIONS.md 
+docs/*
+
