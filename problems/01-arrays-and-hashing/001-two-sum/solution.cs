@@ -29,10 +29,8 @@ using System.IO;
 using System.Text.Json;
 using System.Linq;
 
-namespace CodingInterviewPrep
+public class TwoSumSolution
 {
-    public class TwoSumSolution
-    {
         /// <summary>
         /// Find two numbers in the array that add up to the target.
         /// </summary>
@@ -62,9 +60,16 @@ namespace CodingInterviewPrep
             // Key concept: For each number, check if (target - number) exists
             
             // Remove the line below and implement your solution
+            var NumMap = new Dictionary<int,int>();
+            for(int i = 0; i < nums.Length; i++){
+                var compliment = target - nums[i];
+                if(NumMap.ContainsKey(compliment)){
+                    return new int[] {NumMap[compliment],i};
+                }
+                NumMap[nums[i]] = i;
+            }
             return new int[] { };
         }
-
         // Test data classes
         public class TestCase
         {
@@ -86,7 +91,7 @@ namespace CodingInterviewPrep
             public string problem { get; set; }
             public List<TestCase> testCases { get; set; }
         }
-
+        
         /// <summary>
         /// Run all test cases from test-data.json
         /// </summary>
@@ -114,7 +119,7 @@ namespace CodingInterviewPrep
 
                 try
                 {
-                    var result = TwoSum(nums, target);
+                    var result = TwoSumSolution.TwoSum(nums, target);
 
                     // Check if result matches expected (order doesn't matter)
                     var resultSorted = result.OrderBy(x => x).ToArray();
@@ -172,26 +177,23 @@ namespace CodingInterviewPrep
             }
         }
 
-        public static void Main(string[] args)
-        {
-            // Quick manual test
-            Console.WriteLine("Quick Test:");
-            Console.WriteLine("Input: [2, 7, 11, 15], target = 9");
-            Console.WriteLine("Expected: [0, 1]");
-            try
-            {
-                var result = TwoSum(new int[] { 2, 7, 11, 15 }, 9);
-                Console.WriteLine($"Your output: [{string.Join(", ", result)}]");
-            }
-            catch
-            {
-                Console.WriteLine("Your output: Not implemented yet");
-            }
-            Console.WriteLine();
-
-            // Uncomment the line below when you're ready to run all tests
-            // RunTests();
-        }
-    }
 }
+
+// Quick manual test (global code for dotnet script)
+Console.WriteLine("Quick Test:");
+Console.WriteLine("Input: [2, 7, 11, 15], target = 9");
+Console.WriteLine("Expected: [0, 1]");
+try
+{
+    var result = TwoSumSolution.TwoSum(new int[] { 2, 7, 11, 15 }, 9);
+    Console.WriteLine($"Your output: [{string.Join(", ", result)}]");
+}
+catch
+{
+    Console.WriteLine("Your output: Not implemented yet");
+}
+Console.WriteLine();
+
+// Run all tests
+TwoSumSolution.RunTests();
 
