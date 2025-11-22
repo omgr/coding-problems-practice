@@ -23,7 +23,7 @@
  * Space Complexity Goal: O(n)
  */
 
-import * as fs from 'fs';
+import fs = require('fs');
 
 /**
  * Test case interface
@@ -73,6 +73,14 @@ function twoSum(nums: number[], target: number): number[] {
     // Key concept: For each number, check if (target - number) exists
     
     // Remove the line below and implement your solution
+    const numMap = new Map<number, number>();
+    for(let i = 0; i < nums.length; i++){
+        const compliment = target - nums[i];
+        if(numMap.has(compliment)){
+            return [numMap.get(compliment)!,i];
+        }
+        numMap.set(nums[i],i);
+    }
     return [];
 }
 
@@ -159,7 +167,7 @@ try {
 console.log();
 
 // Uncomment the line below when you're ready to run all tests
-// runTests();
+runTests();
 
 // Export for use in other files
 export { twoSum, runTests };
