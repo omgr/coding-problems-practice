@@ -1,0 +1,123 @@
+{
+  "problem": "Group Anagrams",
+  "testCases": [
+    {
+      "id": 1,
+      "description": "Example 1 - Standard case with multiple anagram groups",
+      "input": {
+        "strs": ["eat", "tea", "tan", "ate", "nat", "bat"]
+      },
+      "expected": [
+        ["bat"],
+        ["nat", "tan"],
+        ["ate", "eat", "tea"]
+      ],
+      "note": "Order of groups and words within groups doesn't matter"
+    },
+    {
+      "id": 2,
+      "description": "Single empty string",
+      "input": {
+        "strs": [""]
+      },
+      "expected": [
+        [""]
+      ]
+    },
+    {
+      "id": 3,
+      "description": "Single character",
+      "input": {
+        "strs": ["a"]
+      },
+      "expected": [
+        ["a"]
+      ]
+    },
+    {
+      "id": 4,
+      "description": "No anagrams - all unique",
+      "input": {
+        "strs": ["cab", "tin", "pew", "duh", "may"]
+      },
+      "expected": [
+        ["cab"],
+        ["tin"],
+        ["pew"],
+        ["duh"],
+        ["may"]
+      ]
+    },
+    {
+      "id": 5,
+      "description": "All same word (anagrams of each other)",
+      "input": {
+        "strs": ["a", "a", "a", "a"]
+      },
+      "expected": [
+        ["a", "a", "a", "a"]
+      ]
+    },
+    {
+      "id": 6,
+      "description": "Two groups of anagrams",
+      "input": {
+        "strs": ["abc", "bca", "cab", "xyz", "zyx", "yxz"]
+      },
+      "expected": [
+        ["abc", "bca", "cab"],
+        ["xyz", "zyx", "yxz"]
+      ]
+    },
+    {
+      "id": 7,
+      "description": "Mixed lengths",
+      "input": {
+        "strs": ["a", "ab", "ba", "abc", "cba", "bac"]
+      },
+      "expected": [
+        ["a"],
+        ["ab", "ba"],
+        ["abc", "cba", "bac"]
+      ]
+    },
+    {
+      "id": 8,
+      "description": "Repeated letters",
+      "input": {
+        "strs": ["aab", "aba", "baa", "aaa"]
+      },
+      "expected": [
+        ["aab", "aba", "baa"],
+        ["aaa"]
+      ]
+    },
+    {
+      "id": 9,
+      "description": "Long words",
+      "input": {
+        "strs": ["listen", "silent", "enlist", "hello", "world"]
+      },
+      "expected": [
+        ["listen", "silent", "enlist"],
+        ["hello"],
+        ["world"]
+      ]
+    },
+    {
+      "id": 10,
+      "description": "Large test - performance check",
+      "input": {
+        "strs": ["eat", "tea", "tan", "ate", "nat", "bat", "tab", "tar", "rat", "art", "star", "rats", "arts", "tars"]
+      },
+      "expected": [
+        ["bat", "tab"],
+        ["nat", "tan"],
+        ["ate", "eat", "tea"],
+        ["art", "rat", "tar"],
+        ["arts", "rats", "star", "tars"]
+      ]
+    }
+  ]
+}
+
