@@ -5,7 +5,7 @@
 **A comprehensive, multi-language approach to mastering Data Structures & Algorithms**
 
 ![Languages](https://img.shields.io/badge/Languages-5-blue)
-![Problems](https://img.shields.io/badge/Problems-42-green)
+![Problems Completed](https://img.shields.io/badge/Completed-3%2F42-green)
 ![Status](https://img.shields.io/badge/Status-Active-success)
 
 </div>
@@ -52,11 +52,11 @@ As a **Full-Stack Engineering Manager** who codes daily, I maintain sharp algori
 ### Language Proficiency
 | Language   | Problems Solved | Proficiency Level | Primary Use Case |
 |------------|-----------------|-------------------|------------------|
-| Python 🐍  | 0 / 42 | ██████░░░░ 60% | Rapid prototyping, Data processing |
-| C# 💎      | 0 / 42 | ██████░░░░ 60% | Backend services, Enterprise apps |
-| JavaScript 📜 | 0 / 42 | █████░░░░░ 50% | Frontend, Full-stack |
-| TypeScript 📘 | 0 / 42 | █████░░░░░ 50% | Type-safe frontend, Node.js |
-| Go 🔵      | 0 / 42 | ███░░░░░░░ 30% | Systems programming, Microservices |
+| Python 🐍  | 3 / 42 | ██████░░░░ 60% | Rapid prototyping, Data processing |
+| C# 💎      | 3 / 42 | ██████░░░░ 60% | Backend services, Enterprise apps |
+| JavaScript 📜 | 3 / 42 | █████░░░░░ 50% | Frontend, Full-stack |
+| TypeScript 📘 | 3 / 42 | █████░░░░░ 50% | Type-safe frontend, Node.js |
+| Go 🔵      | 3 / 42 | ███░░░░░░░ 30% | Systems programming, Microservices |
 
 ### Data Structures Mastered
 <details>
@@ -113,7 +113,8 @@ coding-problems-practice/
 │       │   ├── solution.cs       # C# implementation
 │       │   └── solution.go       # Go implementation
 │       ├── 002-contains-duplicate/
-│       └── 003-valid-anagram/
+│       ├── 003-valid-anagram/
+│       └── 004-group-anagrams/
 ├── 🏆 challenges/                # Timed coding challenges
 ├── 💾 solutions/                 # Completed, production-ready solutions
 └── 🛠️ utils/                     # Test runners and helper scripts
@@ -381,7 +382,7 @@ This repository is for educational and portfolio purposes. Problems are inspired
 
 **⭐ Star this repo if you find it helpful!**
 
-*Last Updated: November 21, 2025*
+*Last Updated: November 24, 2025*
 
 </div>
 
