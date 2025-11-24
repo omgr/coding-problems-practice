@@ -7,7 +7,7 @@
  * Space Complexity Goal: O(1)
  */
 
-import * as fs from 'fs';
+import fs = require('fs');
 
 function isAnagram(s: string, t: string): boolean {
     // TODO: Implement using Map<string, number> for frequency

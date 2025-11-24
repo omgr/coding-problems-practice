@@ -15,8 +15,14 @@ const fs = require('fs');
  * @returns {boolean} - True if duplicates exist
  */
 function containsDuplicate(nums) {
-    // TODO: Implement using Set
-    // Hint: Set automatically handles uniqueness
+
+    const numTrack = new Set();
+    for(const num of nums){
+        if(numTrack.has(num)){
+            return true;
+        }
+        numTrack.add(num);
+    }
     
     return false;
 }
@@ -64,7 +70,7 @@ console.log("Quick Test: [1,2,3,1] -> Expected: true");
 console.log(`Your output: ${containsDuplicate([1, 2, 3, 1])}`);
 console.log();
 
-// runTests();
+runTests();
 
 module.exports = { containsDuplicate, runTests };
 
