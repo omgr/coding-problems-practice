@@ -23,7 +23,22 @@ TODO: Implement using map[int]bool as a set
 Hint: In Go, maps can simulate sets
 */
 func containsDuplicate(nums []int) bool {
-	// TODO: Implement your solution here
+	// Create a map to track seen numbers
+	// In Go: map[keyType]valueType
+	// We use bool as value (true means "seen")
+	numTrack := make(map[int]bool)
+	
+	// range returns (index, value)
+	// Use _ to ignore index since we don't need it
+	for _, num := range nums {
+		// Check if num exists in map
+		// Go maps return (value, exists) when looked up
+		if _, ok := numTrack[num]; ok {
+			return true  // Found duplicate!
+		}
+		// Mark this number as seen
+		numTrack[num] = true
+	}
 	
 	return false
 }
@@ -88,6 +103,6 @@ func main() {
 	fmt.Printf("Your output: %v\n", containsDuplicate([]int{1, 2, 3, 1}))
 	fmt.Println()
 
-	// runTests()
+	runTests()
 }
 

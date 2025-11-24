@@ -7,12 +7,16 @@
  * Space Complexity Goal: O(n)
  */
 
-import * as fs from 'fs';
+import fs = require('fs');
 
 function containsDuplicate(nums: number[]): boolean {
-    // TODO: Implement using Set<number>
-    // Hint: Compare Set size with array length
-    
+    const numTrack = new Set<number>();
+    for(const num of nums){
+        if(numTrack.has(num)){
+            return true;
+        }
+        numTrack.add(num);
+    }
     return false;
 }
 
@@ -62,7 +66,7 @@ console.log("Quick Test: [1,2,3,1] -> Expected: true");
 console.log(`Your output: ${containsDuplicate([1, 2, 3, 1])}`);
 console.log();
 
-// runTests();
+runTests();
 
 export { containsDuplicate, runTests };
 

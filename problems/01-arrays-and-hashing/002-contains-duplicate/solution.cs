@@ -12,18 +12,21 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text.Json;
 
-namespace CodingInterviewPrep
+public class ContainsDuplicateSolution
 {
-    public class ContainsDuplicateSolution
-    {
         /// <summary>
         /// Check if array contains any duplicates
         /// </summary>
         public static bool ContainsDuplicate(int[] nums)
         {
-            // TODO: Implement using HashSet<int>
-            // Hint: Try to add each element to HashSet
-            
+
+            var numTrack = new HashSet<int>();
+            foreach(int num in nums){
+                if(numTrack.Contains(num)){
+                    return true;
+                }
+                numTrack.Add(num);
+            }
             return false;
         }
 
@@ -99,14 +102,12 @@ namespace CodingInterviewPrep
             }
         }
 
-        public static void Main(string[] args)
-        {
-            Console.WriteLine("Quick Test: [1,2,3,1] -> Expected: True");
-            Console.WriteLine($"Your output: {ContainsDuplicate(new int[] { 1, 2, 3, 1 })}");
-            Console.WriteLine();
-
-            // RunTests();
-        }
-    }
 }
+
+// Quick manual test (global code for dotnet script)
+Console.WriteLine("Quick Test: [1,2,3,1] -> Expected: True");
+Console.WriteLine($"Your output: {ContainsDuplicateSolution.ContainsDuplicate(new int[] { 1, 2, 3, 1 })}");
+Console.WriteLine();
+
+ContainsDuplicateSolution.RunTests();
 

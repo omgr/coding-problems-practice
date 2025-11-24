@@ -32,7 +32,15 @@ def contains_duplicate(nums: List[int]) -> bool:
     
     # TODO: Implement your solution here
     # Hint: Use a set to track numbers you've seen
+    # numTrack = set()
+    # for num in nums:
+    #     if num in numTrack:
+    #         return True
+    #     numTrack.add(num)
+    # return False
     
+    return len(nums) != len(set(nums))
+
     pass
 
 
@@ -82,5 +90,5 @@ if __name__ == "__main__":
         print("Not implemented yet")
     print()
     
-    # run_tests()
+    run_tests()
 

@@ -13,10 +13,8 @@ using System.IO;
 using System.Text.Json;
 using System.Linq;
 
-namespace CodingInterviewPrep
+public class ValidAnagramSolution
 {
-    public class ValidAnagramSolution
-    {
         /// <summary>
         /// Check if t is an anagram of s
         /// </summary>
@@ -105,14 +103,13 @@ namespace CodingInterviewPrep
             }
         }
 
-        public static void Main(string[] args)
-        {
-            Console.WriteLine("Quick Test: s=\"anagram\", t=\"nagaram\" -> Expected: True");
-            Console.WriteLine($"Your output: {IsAnagram(\"anagram\", \"nagaram\")}");
-            Console.WriteLine();
-
-            // RunTests();
-        }
-    }
 }
+
+// Quick manual test (global code for dotnet script)
+Console.WriteLine("Quick Test: s=\"anagram\", t=\"nagaram\" -> Expected: True");
+Console.WriteLine($"Your output: {ValidAnagramSolution.IsAnagram(\"anagram\", \"nagaram\")}");
+Console.WriteLine();
+
+// Uncomment to run all tests
+// ValidAnagramSolution.RunTests();
 
