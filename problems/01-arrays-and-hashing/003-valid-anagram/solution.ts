@@ -12,8 +12,17 @@ import fs = require('fs');
 function isAnagram(s: string, t: string): boolean {
     // TODO: Implement using Map<string, number> for frequency
     // Hint: Early exit if lengths differ
+    if (s.length !== t.length) return false;
+    const charsCount = new Array(26).fill(0);
+    for (let i = 0; i < s.length; i++) {
+        charsCount[s.charCodeAt(i) - 'a'.charCodeAt(0)]++;
+    }
+    for (let i = 0; i < t.length; i++) {
+        if (charsCount[t.charCodeAt(i) - 'a'.charCodeAt(0)] === 0) return false;
+        charsCount[t.charCodeAt(i) - 'a'.charCodeAt(0)]--;
+    }
     
-    return false;
+    return true;
 }
 
 interface TestCase {
@@ -64,7 +73,7 @@ console.log('Quick Test: s="anagram", t="nagaram" -> Expected: true');
 console.log(`Your output: ${isAnagram('anagram', 'nagaram')}`);
 console.log();
 
-// runTests();
+runTests();
 
 export { isAnagram, runTests };
 

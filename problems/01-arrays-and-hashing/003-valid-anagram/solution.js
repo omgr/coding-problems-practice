@@ -18,8 +18,17 @@ const fs = require('fs');
 function isAnagram(s, t) {
     // TODO: Implement using Map or object for frequency counting
     // Hint: You can also use sorting approach
+    if (s.length !== t.length) return false;
+    const charsCount = new Array(26).fill(0);
+    for (let i = 0; i < s.length; i++) {
+        charsCount[s.charCodeAt(i) - 'a'.charCodeAt(0)]++;
+    }
+    for (let i = 0; i < t.length; i++) {
+        if (charsCount[t.charCodeAt(i) - 'a'.charCodeAt(0)] === 0) return false;
+        charsCount[t.charCodeAt(i) - 'a'.charCodeAt(0)]--;
+    }
     
-    return false;
+    return true;
 }
 
 function runTests() {
@@ -67,7 +76,7 @@ console.log('Quick Test: s="anagram", t="nagaram" -> Expected: true');
 console.log(`Your output: ${isAnagram('anagram', 'nagaram')}`);
 console.log();
 
-// runTests();
+runTests();
 
 module.exports = { isAnagram, runTests };
 

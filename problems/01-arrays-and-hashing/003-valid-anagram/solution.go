@@ -24,8 +24,20 @@ Hint: rune is used for Unicode characters in Go
 */
 func isAnagram(s string, t string) bool {
 	// TODO: Implement your solution here
-	
-	return false
+	if len(s) != len(t){
+		return false;
+	}
+	charCounts := make(map[rune]int);
+	for _,char := range s{
+		charCounts[char]++;
+	}
+	for _,char := range t{
+		if charCounts[char] == 0{
+			return false;
+		}
+		charCounts[char]--;
+	}
+	return true
 }
 
 type TestCase struct {
@@ -92,6 +104,6 @@ func main() {
 	fmt.Printf("Your output: %v\n", isAnagram("anagram", "nagaram"))
 	fmt.Println()
 
-	// runTests()
+	runTests()
 }
 

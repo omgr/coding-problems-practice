@@ -23,8 +23,22 @@ public class ValidAnagramSolution
             // TODO: Implement using Dictionary<char, int>
             // Hint: LINQ can help with sorting approach
             // Alternative: Count frequencies manually
+            if (s.Length != t.Length) return false;
+
+            int[] charsCount = new int[26];
+
+            foreach(char c in s){
+                charsCount[c - 'a']++;
+            }
+
+            foreach(char c in t){
+                if(charsCount[c - 'a'] == 0)
+                return false;
+                charsCount[c - 'a']--;
+            }
+
             
-            return false;
+            return true;
         }
 
         public class TestCase
@@ -107,9 +121,10 @@ public class ValidAnagramSolution
 
 // Quick manual test (global code for dotnet script)
 Console.WriteLine("Quick Test: s=\"anagram\", t=\"nagaram\" -> Expected: True");
-Console.WriteLine($"Your output: {ValidAnagramSolution.IsAnagram(\"anagram\", \"nagaram\")}");
+var quickTestResult = ValidAnagramSolution.IsAnagram("anagram", "nagaram");
+Console.WriteLine($"Your output: {quickTestResult}");
 Console.WriteLine();
 
 // Uncomment to run all tests
-// ValidAnagramSolution.RunTests();
+ValidAnagramSolution.RunTests();
 
