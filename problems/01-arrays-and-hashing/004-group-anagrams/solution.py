@@ -41,6 +41,20 @@ def group_anagrams(strs: List[str]) -> List[List[str]]:
     # TODO: Implement your solution here
     # Approach 1: Use sorted string as key
     # Approach 2: Use character frequency tuple as key
+    if len(strs) == 0:
+        return []
+    if len(strs) == 1:
+        return [[strs[0]]]
+    
+    anagram_grps = {}
+    for str in strs:
+        sorted_str = "".join(sorted(str))
+        if sorted_str in anagram_grps:
+            anagram_grps[sorted_str].append(str)
+        else:
+            anagram_grps[sorted_str] = [str]
+    return list(anagram_grps.values())
+
     
     pass
 
