@@ -23,8 +23,18 @@ public class GroupAnagramsSolution
         // TODO: Implement using Dictionary<string, List<string>>
         // Hint 1: Use sorted string as key: string.Join("", str.OrderBy(c => c))
         // Hint 2: Or use character count array as key
-        
-        return new List<List<string>>();
+        Dictionary<string,List<string>> ags = new();
+        foreach(string w in strs){
+            string sw = string.Join("",w.OrderBy(c => c));
+            if(ags.ContainsKey(sw)){
+                ags[sw].Add(w);
+            }
+            else{
+                ags[sw] = new List<string>{w};
+            }
+
+        }
+        return ags.Values.ToList();
     }
 
     public class TestCase
